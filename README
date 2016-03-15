@@ -1,0 +1,30 @@
+================================================================
+
+   ASSIGNMENT 2  - HTTP PROXY SERVER
+
+           Name: SANJEEV KUMAR YADAV
+ Username/Login: IRM2013017
+ 
+===============================================================
+OUR CODE EXPLANATION :- 
+
+OUR  proxy server can succesfully connect to http://iiita.ac.in and http://profile.iiita.ac.in because these URLs do not require LDAP credentials to connect to ironport proxy. Other websites will connect because restriction from ironport proxy.
+
+1. To run the code compile using following command gcc proxy.c -o proxy
+2. Run the code like> ./proxy 8000 #where 8000 is port number
+3. At successfull run output will be ipaddress and port of the machine at which server is running 
+4. open firefox and apply proxy in firefox as 127.0.0.1 and port as 8000.
+5. now try to open iiita.ac.in . It should also  work. 
+6. Open profile.iiita.ac.in. It should also work.
+7. Open ftp://myftp.iiita.ac.in . It will notify/GIVE  as bad request.
+8. OUR code is give the bad request for the othe site because of slow internet connection of mobile . 
+but code is perfectly work . 
+In my system my code is perfectly working and ne ot guarantee that is working or not in your system . 
+to check the python file as given in the assignment :
+Running Step is :- 
+python proxy_tester.py 8000(random any port no ). 
+
+
+
+THANKYOU SIR .
+
